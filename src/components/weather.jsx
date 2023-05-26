@@ -37,8 +37,8 @@ const Weather = () => {
             <p>{data.name}</p>
           </div>
           <div className='temp'>
-            {data.main ? <p>Max {data.main.temp_max} C </p> : null}
-            {data.main ? <p>Min {data.main.temp_min} C </p> : null}
+            {data.main ? <p>Max {data.main.temp_max} F </p> : null}
+            {data.main ? <p>Min {data.main.temp_min} F </p> : null}
           </div>
           <div className='clounds'>
             {data.weather ? <p> {data.weather[0].main} </p> : null}
@@ -46,7 +46,7 @@ const Weather = () => {
         </div>
         <div className='down'>
           <div className='feels'>
-            {data.main ? <p>{data.main.feels_like} C </p> : null}
+            {data.main ? <p>{data.main.feels_like} F </p> : null}
             <p>Feels Like</p>
           </div>
           <div className='humidity'>
